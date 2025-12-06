@@ -1,4 +1,4 @@
-# Gespensterj-ger - Ghost Hunter VR
+# Gespensterjäger - Ghost Hunter VR
 
 Ein VR-Geisterjagd-Spiel mit zweihändiger Bogen-Interaktion für Meta Quest entwickelt mit Unity.
 
