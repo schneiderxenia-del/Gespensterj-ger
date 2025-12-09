@@ -5114,8 +5114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e173e3a84301b45bd0ffe62c8ecf5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
-  _trailSystem: {fileID: 0}
+  launchSpeed: 2
+  trailEffect: {fileID: 7292227239219168873}
 --- !u!114 &5889066035369529018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5128,16 +5128,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cff055def4f8741b0ddc5daaa77b99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explodeOnImpact: 0
-  _stickDuration: 4
-  _minEmbedDepth: 0.2
-  _maxEmbedDepth: 0.225
-  _ignoreLayers:
+  stickDuration: 3
+  minDepth: 0.2
+  maxDepth: 0.225
+  ignoreLayers:
     serializedVersion: 2
     m_Bits: 896
-  _tip: {fileID: 5336407967821072772}
-  _impactGameObject: {fileID: 4859231699507931063, guid: 08d4e56837cf3f34588af8ec93a5d8da, type: 3}
-  _arrowMeshRenderer: {fileID: 4788927061686706244}
+  arrowTip: {fileID: 5336407967821072772}
 --- !u!1001 &4788927061688612900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5224,11 +5221,6 @@ PrefabInstance:
       addedObject: {fileID: 6972294599128917301}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cff4c024d20095a458a66e6e0d47bf1b, type: 3}
---- !u!23 &4788927061686706244 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2300000, guid: cff4c024d20095a458a66e6e0d47bf1b, type: 3}
-  m_PrefabInstance: {fileID: 4788927061688612900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4788927061688476324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: cff4c024d20095a458a66e6e0d47bf1b, type: 3}

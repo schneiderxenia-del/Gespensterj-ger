@@ -273,7 +273,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &49325032
@@ -501,7 +501,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &68115690
@@ -591,7 +591,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &83275000
@@ -864,7 +864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130048b7f693eb24192477643add102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimateAndOnInput
-  bowGrabInteractable: {fileID: 0}
   triggerValue:
     m_UseReference: 1
     m_Action:
@@ -1110,7 +1109,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &377516089
@@ -1200,7 +1199,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &387087857 stripped
@@ -1418,7 +1417,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &433073260
@@ -1618,7 +1617,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &505446576
@@ -2504,7 +2503,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &779977383 stripped
@@ -2584,7 +2583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130048b7f693eb24192477643add102f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimateAndOnInput
-  bowGrabInteractable: {fileID: 0}
   triggerValue:
     m_UseReference: 1
     m_Action:
@@ -2820,7 +2818,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &838315166
@@ -2954,7 +2952,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &860892756
@@ -3059,7 +3057,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &874494285
@@ -4577,7 +4575,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1047021714
@@ -4779,7 +4777,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1055968707
@@ -4978,10 +4976,7 @@ MonoBehaviour:
   m_StartingGroupMembers:
   - {fileID: 0}
   - {fileID: 0}
-  m_StartingInteractionOverridesMap:
-  - groupMember: {fileID: 0}
-    overrideGroupMembers:
-    - {fileID: 0}
+  m_StartingInteractionOverridesMap: []
 --- !u!114 &1078863936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5102,7 +5097,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1119017899
@@ -5752,9 +5747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd566c9c5ff07704d923adedb029f2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _arrowPrefab: {fileID: 8843251202395903265, guid: d4f106d6012dd6149ac2aaca27a66d52, type: 3}
-  _notchPoint: {fileID: 1451302618}
-  _spawnDelay: 1
+  arrowPrefab: {fileID: 8843251202395903265, guid: d4f106d6012dd6149ac2aaca27a66d52, type: 3}
+  notchPoint: {fileID: 1451302618}
+  spawnDelay: 1
 --- !u!4 &1199443506
 Transform:
   m_ObjectHideFlags: 0
@@ -6023,7 +6018,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1221081235
@@ -6185,7 +6180,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1250001445
@@ -6502,7 +6497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HideAfterTime
   hideTime: 5
-  ghostDirector: {fileID: 1568152910}
+  ghostManager: {fileID: 1568152910}
 --- !u!114 &1287002661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7334,9 +7329,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1422822481}
-        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Interactables.XRPullInteractable,
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Interactables.BowStringPull,
           Assembly-CSharp
-        m_MethodName: SetPullInteractor
+        m_MethodName: BeginPull
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7350,9 +7345,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1422822481}
-        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Interactables.XRPullInteractable,
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Interactables.BowStringPull,
           Assembly-CSharp
-        m_MethodName: Release
+        m_MethodName: EndPull
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7383,9 +7378,9 @@ MonoBehaviour:
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_StartingInteractionStrengthFilters: []
-  _startPoint: {fileID: 168376584}
-  _endPoint: {fileID: 487435268}
-  _notchPoint: {fileID: 1451302618}
+  startPos: {fileID: 168376584}
+  endPos: {fileID: 487435268}
+  stringPos: {fileID: 1451302618}
 --- !u!4 &1447508566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c43c055d77c369542bad18920816082d, type: 3}
@@ -8024,7 +8019,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1635491030
@@ -8202,7 +8197,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1677906493
@@ -8349,7 +8344,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1716431905
@@ -8424,7 +8419,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1716431907
@@ -8514,7 +8509,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1726523284
@@ -9310,7 +9305,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1873015120
@@ -9634,7 +9629,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1901160826
@@ -9804,7 +9799,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &1922833996
@@ -9945,7 +9940,7 @@ SpriteRenderer:
   m_Size: {x: 3.648259, y: 2.6399999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1931971142
@@ -10076,7 +10071,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2051703197
@@ -10208,7 +10203,7 @@ SpriteRenderer:
   m_Size: {x: 4.9615912, y: 3.508}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &506693173736616263

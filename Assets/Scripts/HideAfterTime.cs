@@ -1,32 +1,34 @@
 ﻿using UnityEngine;
 
+[HelpURL("https://github.com/schneiderxenia-del/Gespensterj-ger/wiki/HideAfterTime")]
 public class HideAfterTime : MonoBehaviour
 {
     [Header("Wartezeit, bevor das Canvas ausgeblendet wird")]
-    public float hideTime = 5f;
+    public float hideTime = 5f;                        // Zeit bis zum Ausblenden
 
-    [Header("GhostDirector, der nach dem Ausblenden starten soll")]
-    public GhostDirector ghostDirector;
+    [Header("GhostManager")]
+    public GhostManager ghostManager;                   // Referenz zum GhostManager (Start des Spawnens)
 
     void Start()
     {
-        // Nach X Sekunden HidePopup() aufrufen
+        // Startet einen Timer, der nach hideTime die Methode HidePopup aufruft
         Invoke(nameof(HidePopup), hideTime);
     }
 
+    // Blendet das UI aus und startet das Spawnen der Geister
     void HidePopup()
     {
-        // 1️⃣ Zuerst Geister-Spawning starten
-        if (ghostDirector != null)
+        // Startet die Spawn-Logik, wenn ein GhostManager vorhanden ist
+        if (ghostManager != null)
         {
-            ghostDirector.StartSpawning();
+            ghostManager.StartSpawning();
         }
         else
         {
-            Debug.LogWarning("HideAfterTime: GhostDirector ist nicht zugewiesen!");
+            Debug.LogWarning("HideAfterTime: GhostManager ist nicht zugewiesen!");
         }
 
-        // 2️⃣ Dann Canvas ausblenden
+        // Canvas deaktivieren
         gameObject.SetActive(false);
     }
 }

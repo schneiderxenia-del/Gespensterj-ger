@@ -2,16 +2,17 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
+[HelpURL("https://github.com/schneiderxenia-del/Gespensterj-ger/wiki/ArrowSpawner")]
 public class ArrowSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject arrowPrefab;
-    [SerializeField] private GameObject notchPoint;
-    [SerializeField] private float spawnDelay = 1f;
+    [SerializeField] private GameObject arrowPrefab;   // Pfeil, der gespawnt wird
+    [SerializeField] private GameObject notchPoint;    // Position am Bogen, wo der Pfeil eingehängt sitzt
+    [SerializeField] private float spawnDelay = 1f;    // Verzögerung für neuen Pfeil
 
-    private XRGrabInteractable bow;
-    private XRPullInteractable pullInteractable;
-    private bool arrowNotched = false;
-    private GameObject currentArrow = null;
+    private XRGrabInteractable bow;                    // Bogen, der gehalten wird
+    private BowStringPull bowStringPull;               // Sehne, erkennt Abschuss
+    private bool arrowNotched = false;                 // Ob ein Pfeil eingespannt ist
+    private GameObject currentArrow = null;            // Der aktive Pfeil
 
     private float spawnTimer = 0f;
     private bool waitingForSpawn = false;
@@ -19,16 +20,17 @@ public class ArrowSpawner : MonoBehaviour
     private void Start()
     {
         bow = GetComponent<XRGrabInteractable>();
-        pullInteractable = GetComponentInChildren<XRPullInteractable>();
+        bowStringPull = GetComponentInChildren<BowStringPull>();
 
-        if (pullInteractable != null)
-            pullInteractable.PullActionReleased += NotchEmpty;
+        // NEUE EVENTS — passend zur neuen BowStringPull-Klasse!
+        if (bowStringPull != null)
+            bowStringPull.OnReleased += NotchEmpty;
     }
 
     private void OnDestroy()
     {
-        if (pullInteractable != null)
-            pullInteractable.PullActionReleased -= NotchEmpty;
+        if (bowStringPull != null)
+            bowStringPull.OnReleased -= NotchEmpty;
     }
 
     private void Update()
@@ -38,6 +40,7 @@ public class ArrowSpawner : MonoBehaviour
         TickSpawnTimer();
     }
 
+    // Startet Timer, sobald der Bogen gehalten wird und kein Pfeil eingespannt ist
     private void HandleSpawnState()
     {
         if (bow.isSelected && !arrowNotched && !waitingForSpawn)
@@ -47,6 +50,7 @@ public class ArrowSpawner : MonoBehaviour
         }
     }
 
+    // Wenn Bogen losgelassen wird → eingespannten Pfeil entfernen
     private void HandleReleaseState()
     {
         if (!bow.isSelected && currentArrow != null)
@@ -56,6 +60,7 @@ public class ArrowSpawner : MonoBehaviour
         }
     }
 
+    // Timer runterzählen → Pfeil erzeugen
     private void TickSpawnTimer()
     {
         if (!waitingForSpawn)
@@ -70,19 +75,21 @@ public class ArrowSpawner : MonoBehaviour
         }
     }
 
+    // Erstellt einen neuen Pfeil und verbindet ihn mit der BowStringPull-Klasse
     private void CreateArrow()
     {
         arrowNotched = true;
 
         currentArrow = Instantiate(arrowPrefab, notchPoint.transform);
 
-        ArrowLauncher launcher = currentArrow.GetComponent<ArrowLauncher>();
-        if (launcher != null && pullInteractable != null)
+        ArrowShooter shooter = currentArrow.GetComponent<ArrowShooter>();
+        if (shooter != null && bowStringPull != null)
         {
-            launcher.Initialize(pullInteractable);
+            shooter.BindToString(bowStringPull);  // Neue Methode für Verbindung
         }
     }
 
+    // Wird ausgelöst, wenn die Sehne losgelassen wurde
     private void NotchEmpty(float value)
     {
         arrowNotched = false;
